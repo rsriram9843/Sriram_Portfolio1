@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRIRAM R Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Include the additional CSS for background effects */
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            width: 20px;
+            height: 20px;
+            animation: bubble 10s linear infinite;
+            pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.8);
+            width: 10px;
+            height: 10px;
+            animation: star-flicker 1.5s infinite alternate;
+            pointer-events: none;
+        }
+
+        /* Keyframe animations for bubbles and stars */
+        @keyframes bubble {
+            0% {
+                transform: translateY(0);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes star-flicker {
+            0% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn" onclick="downloadCV()">Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="home-content">
+            <h1>SRIRAM R</h1>
+            <p>Java Software Developer with a passion for building effective and user-friendly web applications. With a foundation <br>
+                in both frontend and backend technologies, I specialize in creating seamless and scalable solutions. My portfolio <br>
+                showcases a range of projects where I've leveraged Java, Angular, and RESTful APIs to deliver high-quality software. <br>
+                I'm continuously learning and evolving in the field, driven by the challenge of solving complex problems with elegant <br>
+                code. Explore my portfolio to see the innovative projects I've developed and how I turn ideas into impactful digital <br>
+                experiences.</p>
+            <img src="photo.jpg" alt="SRIRAM R" class="profile-pic">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="skills-box">
+        <h3>Interpersonal Skills</h3>
+        <p><b>Collaborative Spirit:</b> Embrace teamwork and believe in the power of collaboration to achieve shared goals and foster a positive work environment.</p>
+        <p><b>Innovation-Driven:</b> Constantly seek innovative solutions and approaches to overcome challenges and drive progress within the organization.</p>
+        <p><b>Client-Centric Focus:</b> Prioritize understanding client needs and delivering solutions that exceed expectations, ensuring satisfaction and long-term partnerships.</p>
+        <p><b>Adaptability:</b> Stay flexible and open to change, quickly adapting to new technologies and methodologies in the ever-evolving tech landscape.</p>
+        <p><b>Attention to Detail:</b> Maintain a meticulous approach to coding and project management, ensuring accuracy and quality in every aspect of my work.</p>
+        <p><b>Ethical Commitment:</b> Uphold the highest standards of integrity and ethical conduct, contributing positively to both the workplace and society.</p>
+    </div>
+    <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+</section>
+
+
+
+    <!-- Technologies Section -->
+<section id="technologies" class="section">
+    <h2>Technologies</h2>
+    <div class="tech-box">
+        <div class="tech-section">
+            <div class="tech">
+                <h4>Frontend</h4>
+                <p>HTML</p> 
+                <p>CSS</p> 
+                <p>Bootstrap</p> 
+                <p>JavaScript</p> 
+                <p>Angular</p> 
+                <p>TypeScript</p>
+            </div>
+            <div class="tech">
+                <h4>Backend</h4>
+                <p>Java</p>
+                <p>Python</p>
+            </div>
+            <div class="tech">
+                <h4>Database</h4>
+                <p>MySQL</p>
+                <p>Elasticsearch</p>
+            </div>
+        </div>
+        <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-content">
+        <div class="project">
+            <h3>Fuel Price Prediction Using Machine Learning</h3>
+            <p>Using Python and Machine Learning</p>
+        </div>
+        <div class="project">
+            <h3>Tire Condition Monitoring System Using AI</h3>
+            <p>Using Python and AI & DL</p>
+        </div>
+        <div class="project">
+            <h3>GuardTech Miner Sentinel: An IoT Safety Helmet for Worker Security</h3>
+            <p>Using IoT, Java, and Embedded C</p>
+        </div>
+    </div>
+    <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+</section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="contact-box">
+        <p>Email: sriram@example.com</p>
+        <p>Phone: +91-1234567890</p>
+        <h3>Connect with me:</h3>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sriram-r-726a4b200/" target="_blank" class="social-btn linkedin">LinkedIn</a>
+            <a href="https://www.instagram.com/sriram_stories/" target="_blank" class="social-btn instagram">Instagram</a>
+            <a href="https://github.com/rsriram9843" target="_blank" class="social-btn github">GitHub</a>
+        </div>
+    </div>
+    <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+</section>
+
+
+    <!-- Background Effects -->
+    <div class="background-effects">
+        <!-- Bubble Elements -->
+        <div class="bubble" style="top: 10%; left: 20%;"></div>
+        <div class="bubble" style="top: 30%; left: 50%;"></div>
+        <div class="bubble" style="top: 60%; left: 70%;"></div>
+
+        <!-- Star Elements -->
+        <div class="star" style="top: 5%; left: 10%;"></div>
+        <div class="star" style="top: 15%; left: 50%;"></div>
+        <div class="star" style="top: 40%; left: 80%;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.createElement('div');
+        menuButton.classList.add('menu-toggle');
+        menuButton.innerHTML = '<span></span><span></span><span></span>';
+        document.querySelector('.navbar').appendChild(menuButton);
+
+        const navMenu = document.querySelector('.nav-menu');
+        menuButton.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    });
+</script>
+
+
+</html>
